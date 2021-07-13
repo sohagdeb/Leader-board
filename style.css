@@ -3,7 +3,57 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    margin: 0;
 }
+/* header-start */
+header{
+    background-color: #562EFF;
+    height: 94px;
+}
+nav{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.logo{
+    display: flex;
+    margin-left: 285px;
+    margin-top: 26px;
+
+}
+.logo>h2{
+    margin-left: 15.58px;
+    font-weight: 500;
+    font-size: 24px;
+    font-style: normal;
+    position: relative;
+    bottom: 15px;
+}
+.logo>img{
+    width: 40.42px;
+    height: 51px;
+}
+.nav-bar{
+   margin-left: 100px;
+   
+}
+.nav-bar>a{
+    position: relative;
+    color: white;
+    margin-left: 36px;
+    text-decoration: none;
+    font-size: 16px;
+    bottom: 20px;
+    
+}
+.nav-bar>img{
+    margin-left: 36px;
+    width: 51px;
+    height: 51px;
+    margin-top: 23px;
+}
+/* header-end */
 main{
     display: flex;
     flex-direction: column;
@@ -15,6 +65,7 @@ main{
     padding: 30px;
     margin-top: 21px;
     border-radius: 5px;
+    
 }
 .top-players{
     margin-bottom: 30px;
@@ -77,6 +128,7 @@ hr{
     color: #562EFF;
 }
 /* latest course */
+
 .courses{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -117,7 +169,43 @@ hr{
 /* media query */
 /* for phone */
 @media only screen and (max-width:688px){
-    
+    header{
+        height: 100%;
+        margin-right: 0;
+        width:100%;
+        align-items: center;
+        
+    }
+    nav{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .logo{
+        flex-direction: column;
+        display: flex;
+        margin: 0;
+        
+    }
+    .logo>img{
+        
+    }
+    .logo>h2{
+        font-size: 16px;
+    }
+    .nav-bar{
+        flex-direction: column; 
+        margin: 0;
+        text-align: center;
+        
+    }
+    .nav-bar>img{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .nav-bar>a{
+        margin: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
     .section-title{
         text-align: center;
     }
