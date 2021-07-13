@@ -169,8 +169,12 @@ hr{
 /* media query */
 /* for phone */
 @media only screen and (max-width:688px){
+    body{
+        background-color: #562EFF;
+    }
+
     header{
-        height: 100%;
+        height:auto;
         margin-right: 0;
         width:100%;
         align-items: center;
@@ -178,6 +182,7 @@ hr{
     }
     nav{
         grid-template-columns: repeat(1,1fr);
+        width: auto;
     }
     .logo{
         flex-direction: column;
@@ -185,17 +190,21 @@ hr{
         margin: 0;
         margin-left: 5%;
         margin-top: 5%;
+        width: auto;
     }
     .logo>img{
         
     }
     .logo>h2{
         font-size: 16px;
+        
     }
     .nav-bar{
         flex-direction: column; 
         margin: 0;
+        margin-left: 2%;
         text-align: center;
+        width: auto;
         
     }
     .nav-bar>img{
@@ -206,6 +215,7 @@ hr{
         margin: 0;
         display: block;
         margin-bottom: 20px;
+        width: 100%;
     }
     .section-title{
         text-align: center;
