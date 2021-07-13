@@ -183,7 +183,8 @@ hr{
         flex-direction: column;
         display: flex;
         margin: 0;
-        
+        margin-left: 5%;
+        margin-top: 5%;
     }
     .logo>img{
         
